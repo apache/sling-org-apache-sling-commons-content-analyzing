@@ -40,6 +40,6 @@ public interface ContentAnalyzer {
      * @param report     the report to which the findings of the analyzing operation are added
      * @return {@link java.util.concurrent.CompletableFuture} for signaling completion
      */
-    @NotNull CompletableFuture<Void> analyze(@NotNull final InputStream input, @Nullable final Map<String, Object> parameters, @NotNull final Map<String, Object> report);
+    public abstract @NotNull CompletableFuture<Void> analyze(@NotNull final InputStream input, @Nullable final Map<String, Object> parameters, @NotNull final Map<String, Object> report);
 
 }
