@@ -26,6 +26,9 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.osgi.annotation.versioning.ProviderType;
 
+/**
+ * Service for analyzing content.
+ */
 @ProviderType
 public interface ContentAnalyzer {
 
