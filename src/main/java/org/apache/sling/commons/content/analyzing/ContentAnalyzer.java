@@ -30,9 +30,9 @@ import org.osgi.annotation.versioning.ProviderType;
 public interface ContentAnalyzer {
 
     /**
-     * @param input      The stream from which the content is read for analyzing
-     * @param parameters The parameters for the analyzing operation
-     * @param report     The report to which the findings of the analyzing operation are added
+     * @param input      the stream from which the content is read for analyzing
+     * @param parameters the parameters for the analyzing operation
+     * @param report     the report to which the findings of the analyzing operation are added
      * @return {@link java.util.concurrent.CompletableFuture} for signaling completion
      */
     @NotNull CompletableFuture<Void> analyze(@NotNull final InputStream input, @Nullable final Map<String, Object> parameters, @NotNull final Map<String, Object> report);
