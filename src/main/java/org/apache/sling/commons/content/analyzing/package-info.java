@@ -16,6 +16,10 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+/**
+ * Provides the Apache Sling Commons Content Analyzing API.
+ */
 @Version("1.0.0")
 package org.apache.sling.commons.content.analyzing;
 
