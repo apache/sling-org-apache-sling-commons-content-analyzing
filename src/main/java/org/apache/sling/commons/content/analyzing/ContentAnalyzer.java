@@ -33,6 +33,8 @@ import org.osgi.annotation.versioning.ProviderType;
 public interface ContentAnalyzer {
 
     /**
+     * Analyzes the given content.
+     *
      * @param input      the stream from which the content is read for analyzing
      * @param parameters the parameters for the analyzing operation
      * @param report     the report to which the findings of the analyzing operation are added
