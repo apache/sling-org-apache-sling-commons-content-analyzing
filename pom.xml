@@ -29,13 +29,13 @@
   </parent>
 
   <artifactId>org.apache.sling.commons.content.analyzing</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
 
   <name>Apache Sling Commons Content Analyzing</name>
   <description>Apache Sling Commons Content Analyzing</description>
 
   <properties>
-    <project.build.outputTimestamp>2021-10-19T19:45:36Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2021-10-19T19:45:58Z</project.build.outputTimestamp>
     <sling.java.version>8</sling.java.version>
   </properties>
 
@@ -43,7 +43,7 @@
     <connection>scm:git:https://gitbox.apache.org/repos/asf/sling-org-apache-sling-commons-content-analyzing.git</connection>
     <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/sling-org-apache-sling-commons-content-analyzing.git</developerConnection>
     <url>https://gitbox.apache.org/repos/asf?p=sling-org-apache-sling-commons-content-analyzing.git</url>
-    <tag>org.apache.sling.commons.content.analyzing-1.0.0</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <build>
