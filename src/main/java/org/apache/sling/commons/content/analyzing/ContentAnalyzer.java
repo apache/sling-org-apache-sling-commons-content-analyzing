@@ -21,6 +21,7 @@ package org.apache.sling.commons.content.analyzing;
 import java.io.InputStream;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ConcurrentMap;
 import java.util.function.Supplier;
 
 import org.jetbrains.annotations.NotNull;
@@ -41,6 +42,6 @@ public interface ContentAnalyzer {
      * @param report     the report to which the findings of the analyzing operation are added
      * @return {@link java.util.concurrent.CompletableFuture} for signaling completion
      */
-    public abstract @NotNull CompletableFuture<Void> analyze(@NotNull final Supplier<InputStream> input, @Nullable final Map<String, Object> parameters, @NotNull final Map<String, Object> report);
+    public abstract @NotNull CompletableFuture<Void> analyze(@NotNull final Supplier<InputStream> input, @Nullable final Map<String, Object> parameters, @NotNull final ConcurrentMap<String, Object> report);
 
 }
