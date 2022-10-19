@@ -21,6 +21,7 @@ package org.apache.sling.commons.content.analyzing;
 import java.io.InputStream;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
+import java.util.function.Supplier;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -35,11 +36,11 @@ public interface ContentAnalyzer {
     /**
      * Analyzes the given content.
      *
-     * @param input      the stream from which the content is read for analyzing
+     * @param input      the supplier of the stream from which the content is read for analyzing
      * @param parameters the parameters for the analyzing operation
      * @param report     the report to which the findings of the analyzing operation are added
      * @return {@link java.util.concurrent.CompletableFuture} for signaling completion
      */
-    public abstract @NotNull CompletableFuture<Void> analyze(@NotNull final InputStream input, @Nullable final Map<String, Object> parameters, @NotNull final Map<String, Object> report);
+    public abstract @NotNull CompletableFuture<Void> analyze(@NotNull final Supplier<InputStream> input, @Nullable final Map<String, Object> parameters, @NotNull final Map<String, Object> report);
 
 }
